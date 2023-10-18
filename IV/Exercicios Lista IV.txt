@@ -1,0 +1,97 @@
+Eber de Souza Silva Junior - Primeiro SEM DSM
+Lista IV de exercícios
+
+1 -
+
+import random
+
+numeros = random.sample (range(100), 10)
+maior = 0 
+menor = 100
+
+for item in numeros:
+    if item > maior:
+        maior = item 
+    if item < menor:
+        menor = item
+    
+print(numeros)
+print(maior)
+print(menor)
+
+2 -
+
+import random
+
+numeros = random.sample(range(100), 20)
+
+pares = []
+impares = []
+
+for x in numeros:
+    if x % 2 == 0:
+        pares.append(x)
+    else:
+        impares.append(x)
+
+print ("Todos os números: ", numeros)
+print ("Números pares: ", pares)
+print ("Númeris impares: ", impares)
+
+3 -
+
+import random
+
+vetor_1 = random.sample(range(100), 10)
+vetor_2 = random.sample(range(100), 10)
+vetor_3 = []
+for n in range(10):
+    vetor_3.append(vetor_1[n])
+    vetor_3.append(vetor_2[n])
+
+print("Vetor um: ", vetor_1)
+print("Vetor dois: ", vetor_2)
+print("Vetor três: ", vetor_3)
+
+4 -
+text = '''The Python Software Foundation and the global Python
+community welcome and encourage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your background, we welcome you.'''.lower()
+
+text = text.replace('.', ' ')
+text = text.replace(',', ' ')
+lista = []
+
+for p in text.split():
+    if p[0] in 'python' or p[-1] in 'python':
+        lista.append(p)
+
+print (f'Lista: {lista})
+
+5 -
+
+text = '''The Python Software Foundation and the global Python
+community welcome and encourage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your background, we welcome you.'''.lower()
+
+import string
+text = text.replace('.', ' ')
+text = text.replace(',', ' ')
+lista = []
+
+def letra_python(palavra):
+    for letra in palavra:
+        if letra in 'python':
+            return True
+    return False
+
+for p in text.split():
+    if letra_python(p) and len(p) > 4:
+        lista.append(p)
+   
+print(f'Lista: {lista}')
+print(f'Quantidade de palavras: {len(lista)}')

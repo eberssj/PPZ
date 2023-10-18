@@ -1,0 +1,86 @@
+Eber de Souza Silva Junior - Primeiro semestre DSM
+Lista de Exercícios I:
+
+1 - 
+
+numero1 = int(input("Primeiro numero:"))
+numero2 = int(input("Segundo numero:"))
+print("Resultado:" , numero1 + numero2)
+
+2 -
+
+metros = int(input("Metros:"))
+milimetros = metros * 1000
+print ("Resultado de metros em milimetros:" , milimetros)
+
+3 -
+
+dias = int(input("Numero de dias:"))
+horas = int(input("Numero de horas:"))
+minutos = int(input("Numero de minutos:"))
+segundos = int(input("Numero de minutos:"))
+
+resultadodias = dias * 86400
+resultadohoras = horas * 3600
+resultadominutos = minutos * 60
+
+print("Resultado final:" , (resultadodias + resultadohoras + resultadominutos + segundos))
+
+4 - 
+
+salario = float(input("Salário:"))
+porcentagem = float(input("Porcentagem de aumento:"))
+aumento = salario/100 * porcentagem + salario
+print(f'novo: RS {aumento:.2f}')
+
+5 -
+
+mercadoria = float(input("Preço da mercadoria:"))
+desconto = float(input("Percentual de desconto:"))
+des = mercadoria * desconto/100
+valor = mercadoria - des 
+print(f'Desconto: {desconto:.2f}%')
+print(f'Valor total: RS {valor:.2f}')
+
+6 - 
+
+espaco = float(input("Distância percorrida em km:"))
+velocidade = float(input("Velocidade média km/h:"))
+resposta = espaco/velocidade
+
+print(f'Tempo da viagem: {resposta:.1f} horas')
+
+7 -
+
+celsius = float(input("Temperatura em Celsius:"))
+fahrenheit = (9 * celsius)/5 + 32
+
+print(f'Temperatura em fahrenheit:{fahrenheit:.2f}')
+
+8 -
+
+fahrenheit = float(input("Temperatura em Fahrenheit:"))
+celsius = (fahrenheit - 32)/1.8
+
+print(f'Temperatura em Celsius:{celsius:.2f}')
+
+9 -
+
+km = float(input("Quilometros Percorridos:"))
+dias = int(input("Quantidade de dias:"))
+preco = dias * 60 + km * 0.15
+
+print(f'Preço total a pagar: {preco:.2f}')
+
+10 - 
+
+cigs = float(input("Quantidade de cigarros por dia:"))
+anos = float(input("Quantidades de anos fumados:"))
+totalcigs = cigs * anos * 365
+totaldiasperd = totalcigs/144
+print(f'Dias perdidos: {totaldiasperd:.2f}')
+
+11 - 
+
+print(f'Há {len(str(2**10000))} dígitos em 2 elevado a 10000')
+

@@ -1,0 +1,1 @@
+print(f'Há {len(str(2**10000))} dígitos em 2 elevado a 10000')

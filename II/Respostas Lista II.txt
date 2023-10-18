@@ -1,0 +1,121 @@
+Eber de Souza Silva Junior - Primeiro SEM DSM
+Exercícios lista II:
+
+1 -
+
+a = int(input("Valor um:"))
+b = int(input("Valor dois:"))
+c = int(input("Valor tres:"))
+
+if a > b + c or b > a + c or c > a + b:
+    print("Não é um triangulo!")
+
+elif a == b == c:
+    print("É um equilátero!")
+
+elif a == b != c or b == c != a or c == a != b:
+    print("É um isosceles!")
+
+else:
+    print("É um escaleno!")
+
+2 -
+
+from calendar import isleap
+ano = int(input("Ano:"))
+
+if isleap(ano):
+    print("É bissexto!")
+
+else:
+    print("Não é bissexto!")
+
+3 -
+
+peso = float(input("Peso:"))
+if peso > 50:
+    excesso = peso - 50
+    multa = excesso * 4
+
+else:
+    excesso = 0
+    multa = 0
+print(f'Excesso: {excesso} kg')
+print(f'Multa: R$ {multa:.2f}')
+
+4 -
+
+a = int(input("Primeiro número:"))
+b = int(input("Segundo número:"))
+c = int(input("Terceiro número:"))
+
+if a >= b and a >= c:
+    maior = a
+
+elif b >= a and b >= c:
+    maior = b
+
+else:
+    maior = c
+
+print ("Maior número:" , maior)
+
+5 - 
+
+a = int(input("Primeiro número:"))
+b = int(input("Segundo número:"))
+c = int(input("Terceiro número:"))
+
+if a >= b and a >= c:
+    maior = a
+
+elif b >= a and b >= c:
+    maior = b
+
+else:
+    maior = c
+
+print ("Maior número:" , maior)
+
+if a <= b and a <= c:
+    menor = a
+
+elif b <= a and b <=c:
+    menor = b
+
+else:
+    menor = c
+
+print ("Menor número:" , menor)
+
+6 -
+
+hora = float(input("Salário por hora:"))
+mes = float(input("Horas trabalhadas no mês:"))
+salariobruto = hora * mes
+impostoderenda = salariobruto * 11/100
+inss = salariobruto * 8/100
+sindicato = salariobruto * 5/100
+
+salarioliquido = salariobruto - impostoderenda - inss - sindicato
+
+print (f'Salário bruto: R$ {salariobruto:.2f}')
+print (f'Imposto de renda: R$ {impostoderenda:.2f}')
+print (f'INSS: R$ {inss:.2f}')
+print (f'Sindicato: R$ {sindicato:.2f}')
+print (f'Salário líquido: R$ {salarioliquido:.2f}')
+
+7 -
+
+import math
+
+metrosporlitro = 3 
+litrosporlata = 18  
+
+metrospintados = float(input("Metros a serem pintados: "))
+totaldelitros = metrospintados / metrosporlitro
+numerodelatas = math.ceil(totaldelitros / litrosporlata)
+precototal = numerodelatas * 80
+
+print(f"Quantidade de latas necessárias: {numerodelatas}")
+print(f"Preço total: R$ {precototal:.2f}")
