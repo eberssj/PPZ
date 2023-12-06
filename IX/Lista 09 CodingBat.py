@@ -74,7 +74,7 @@ def middle_way(a, b):
   return resultado
 
 # G. date_fashion
-# você e sua namorada(o) vão a um restaurante
+# você e sua namorade vão a um restaurante
 # eu e par são as notas das suas roupas de 0 a 10
 # quanto maior a nota mais chique vocês estão vestidos
 # o resultado é se vocês conseguiram uma mesa no restaurante:
